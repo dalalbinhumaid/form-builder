@@ -1,0 +1,44 @@
+a {
+    text-decoration: none;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+}
+
+footer h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 700px;
+    font-size: 16px;
+    vertical-align: middle;
+    font-weight: normal;
+    color: #324759;
+}
+
+footer a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.35);
+    transition: width .2s;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+footer a .material-icons {
+    font-size: 20px;
+    color: #324759;
+    vertical-align: text-bottom;
+}

@@ -1,0 +1,99 @@
+form {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    margin-left: 200px;
+}
+
+form fieldset {
+    width: 700px;
+    max-width: 700px;
+    min-width: 700px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+hr {
+    height: 1.5px;
+    border-width: 0;
+    color: #68767F;
+    background-color: #68767F;
+    margin: 0 10px;
+}
+
+label {
+    margin: 0px 10px;
+    font-weight: normal;
+}
+
+h4,
+h1 {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+input {
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.527);
+    margin: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    width: 300px;
+}
+
+input[type=date],
+input[type=time] {
+    width: 300px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin-right: 0;
+    width: fit-content;
+}
+
+input[type=reset],
+input[type=submit] {
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+}
+
+input[type=reset] {
+    background-color: transparent;
+    border: 2px solid #68767F;
+    color: #68767F;
+}
+
+input[type=submit] {
+    background-color: #68767F;
+    color: #dfdfdf;
+}
+
+textarea {
+    font-size: 16px;
+    width: 650px;
+    height: 150px;
+    margin: 10px;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.527);
+}

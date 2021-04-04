@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/icon.png">
+    <link rel="stylesheet" href="Styles/Menu.css">
+    <link rel="stylesheet" href="Styles/Footer.css">
+    <link rel="stylesheet" href="Styles/Form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JavaScript/Form.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Form Generator</title>
+</head>
+
+<body>
+    <!-- Elements menu ~ Side menu-->
+    <div id="menu" class="side-menu">
+        <h1>FORM ATTRIBUTES</h1>
+        <ul>
+            <li> <a>Theme <i class="material-icons">chevron_right</i> </a>
+                <ul>
+                    <li id="formal"> <a>Formal</a> </li>
+                    <li id="colorful"> <a>Colorful</a> </li>
+                    <li id="bold"> <a>Bold</a> </li>
+                    <li id="earthy"> <a>Earthy</a> </li>
+                </ul>
+            </li>
+            <li><a>Heading <i class="material-icons">chevron_right</i> </a>
+                <ul>
+                    <li id="h4"> <a>Small </a></li>
+                    <li id="h1"> <a>Large </a></li>
+                </ul>
+            </li>
+            <li id="label"> <a>Lable</a> </li>
+            <li> <a>Text Boxes <i class="material-icons">chevron_right</i> </a>
+                <ul>
+                    <li id="text"> <a>Text</a></li>
+                    <li id="email"> <a>Email</a> </li>
+                    <li id="pass"> <a>Password</a> </li>
+                </ul>
+            </li>
+            <li id="textarea"> <a>Textarea </a> </li>
+            <li> <a>Selection <i class="material-icons">chevron_right</i></a>
+                <ul>
+                    <li id="radio"> <a>Radio</a> </li>
+                    <li id="checkbox"> <a>Checkbox</a> </li>
+                </ul>
+            </li>
+            <li> <a>Date and Time <i class="material-icons">chevron_right</i> </a>
+                <ul>
+                    <li id="date"> <a>Date Calendar</a> </li>
+                    <li id="time"> <a>Time Picker</a> </li>
+                </ul>
+            </li>
+            <li> <a>Buttons <i class="material-icons">chevron_right</i> </a>
+                <ul>
+                    <li id="submit"> <a>Submit</a> </li>
+                    <li id="reset"> <a>Reset</a> </li>
+                </ul>
+            </li>
+            <li id="br"> <a>Line Break</a> </li>
+            <li id="hr"> <a>Horizontal Line</a> </li>
+        </ul>
+        <p class="information">enter your label/headings here first before choosing it from the menu.</p>
+        <input id="inputText" type="text" placeholder="Enter your text">
+    </div>
+
+    <!-- Form -->
+    <form action="#">
+        <fieldset id="form">
+        </fieldset>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <h2><strong> Made by Dalal Bin Humaid </strong>
+            <a href="mailto:dalalbinhumaid@gmail.com">
+                <i class="material-icons">mail_outline</i>
+            </a>
+        </h2>
+    </footer>
+
+</body>
+
+</html>

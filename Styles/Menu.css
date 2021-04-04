@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #2a2e30;
+}
+
+body {
+  background-color: #b1b9be;
+  padding-bottom: 15px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 300px;
+  background-color: #343C40;
+  z-index: 1;
+  transition: .2s ease;
+}
+
+.side-menu h1 {
+  font-size: 30px;
+  padding: 5px 0;
+  color: #9CB2BF;
+  line-height: 45px;
+  letter-spacing: 0.2px;
+}
+
+.side-menu ul {
+  list-style: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.side-menu li {
+  position: relative;
+}
+
+.side-menu ul ul {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.2s;
+  transform: translateX(50px);
+}
+
+.side-menu li:hover>ul {
+  left: 100%;
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.side-menu a {
+  border-radius: 0 10px 10px 0;
+  text-decoration: none;
+  font-size: 18px;
+  color: #dfdfdf;
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  background: #343C40;
+}
+
+.side-menu ul ul {
+  background-color: #343C40;
+}
+
+.side-menu li:hover>a {
+  color: white;
+  cursor: pointer;
+}
+
+.side-menu li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: width .2s;
+}
+
+.side-menu li:hover::after {
+  width: 100%;
+}
+
+.information {
+  color: #9CB2BF;
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-style: oblique;
+}
+
+#menu input[type=text] {
+  margin-top: 5px;
+  width: 250px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+#menu ul .material-icons {
+  color: #9CB2BF;
+  display: inline;
+  float: right;
+}
