@@ -10,31 +10,18 @@ html {
 footer {
     position: absolute;
     text-align: center;
-    bottom: 0;
+    bottom: 5px;
+    left: 50%;
 }
 
 footer h2 {
+    padding-top: 15px;
     margin-top: 20px;
-    margin-bottom: 10px;
     position: relative;
-    left: 700px;
     font-size: 16px;
     vertical-align: middle;
     font-weight: normal;
     color: #324759;
-}
-
-footer a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: rgba(0, 0, 0, 0.35);
-    transition: width .2s;
-}
-
-footer a:hover::after {
-    width: 100%;
 }
 
 footer a .material-icons {
